@@ -1,0 +1,24 @@
+import assets from '@/assets';
+import { IconAddressBook, IconSearch, IconShoppingBag } from '@tabler/icons-react';
+import Image from 'next/image';
+import React from 'react';
+
+const TopBar = () => {
+    return (
+        <div className='pt-5 pb-[15px] border-b border-black/10 '>
+            <nav className=' flex justify-between main-container'>
+                <div>
+                    <Image src={assets.almatMainLogo.src} alt='' width={258} height={33} />
+                </div>
+
+                <div className='flex gap-x-[10px]'>
+                    <button className='w-[30px] h-[30px] border-2 border-white bg-white/50 rounded-full flex justify-center items-center'><IconSearch size={18} /></button>
+                    <button className='w-[30px] h-[30px] border-2 border-white bg-white/50 rounded-full flex justify-center items-center'><IconShoppingBag size={18} /></button>
+                    <button className='w-[30px] h-[30px] border-2 border-white bg-white/50 rounded-full flex justify-center items-center'><IconAddressBook size={18} className='text-brand-primary' /></button>
+                </div>
+            </nav>
+        </div>
+    );
+};
+
+export default TopBar;
