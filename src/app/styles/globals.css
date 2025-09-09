@@ -9,7 +9,7 @@
   /* Surfaces */
   --surface-cream: #fefbea; /* Cream BG */
   --surface-white: #ffffff; /* White BG */
-   --surface-light-bg: #F2F2F2; /* Light Gray BG */
+   --surface-light: #F2F2F2; /* Light Gray BG */
 
   /* Text */
   --text-body: #333333; /* Body text */
@@ -22,7 +22,7 @@
   --color-brand-blue-70: var(--brand-blue-70);
   --color-surface-cream: var(--surface-cream);
   --colot-surface-white: var(--font-geist-mono);
-  --color-surface-light-bg: var(--surface-light-bg)  /* main bg */
+  --color-surface-light: var(--surface-light);  /* main bg */
   --colot-text-body: var(--text-body);
   --colot-text-black: var(--text-black);
 }
@@ -43,3 +43,18 @@
 button{
   cursor: pointer;
 }
+select,
+  ::picker(select){
+    appearance: base-select;
+    width: 200px;
+    overflow: hidden;
+  }
+  
+  ::picker(select){
+    border:none;
+    background: #e8e8ee;
+   
+  }
+  option:checked{
+    background: #c7c7cc;
+  }
