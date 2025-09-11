@@ -5,7 +5,7 @@ import Image from 'next/image';
 import assets from '@/assets';
 
 const FlightTrainingCard = ({ plan }: { plan: any }) => {
-    console.log("plan", plan)
+
     return (
         <div className='bg-white drop-shadow-md'>
             <div className='w-full aspect-[300/200]'>
