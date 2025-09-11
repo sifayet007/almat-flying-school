@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React from 'react';
 import Button from '../buttoms/Button';
 import { IconShoppingBag } from '@tabler/icons-react';
-import assets from '@/assets';
 import { ITrialLessonCardProps } from '@/interfaces/trialLesson.interfaces';
 
 
@@ -11,13 +10,13 @@ const TrialLessonCard = ({ data }: { data: ITrialLessonCardProps }) => {
     return (
         <div className='bg-[#FAFAFA] p-[10] border-2 border-black/10 rounded-[20px]'>
             <div className='w-full aspect-[380/260]'>
-                <Image src={data.image} width={380} height={260} alt={data.title} className='w-full h-full object-cover rounded-[20px]' />
+                <Image src={data?.image} width={380} height={260} alt={data.title} className='w-full h-full object-cover rounded-[20px]' />
             </div>
             <div className='px-[10px] pb-[10px] mt-4'>
-                <h1 className='text-black/80'>{data.title}</h1>
+                <h1 className='text-black/80'>{data?.title}</h1>
                 <div className='flex justify-between mt-[6px]'>
-                    <span className='text-brand-primary text-[20px] font-medium'>{data.price}</span>
-                    <span className='text-black/50 font-medium line-through'>{data.oldPrice}</span>
+                    <span className='text-brand-primary text-[20px] font-medium'>{data?.price}</span>
+                    <span className='text-black/50 font-medium line-through'>{data?.oldPrice}</span>
 
                 </div>
                 <div className='flex justify-between gap-3 mt-5'>

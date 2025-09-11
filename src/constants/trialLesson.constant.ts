@@ -31,14 +31,14 @@ const trialLessonData = [
   },
   {
     id: 5,
-    image: 5,
+    image: assets.trialLessonImg5,
     title: "Trial Flying Lesson in a Cutting Edge Electric Aircraft",
     price: "£159.00 inc. VAT",
     oldPrice: "£175.00",
   },
   {
     id: 6,
-    image: 6,
+    image: assets.trialLessonImg6,
     title: "Trial Flying Lesson in a Cutting Edge Electric Aircraft",
     price: "£159.00 inc. VAT",
     oldPrice: "£175.00",

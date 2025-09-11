@@ -6,9 +6,9 @@ import planes from '@/constants/flightTraining.constants';
 
 const FlightTraining = () => {
     return (
-        <div className='main-container  mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px]'>
+        <div className='main-container  mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5'>
             <div className='w-full'>
-                <div className='md:max-w-[453px] space-y-5 lg:mt-0 mt-10'>
+                <div className='md:max-w-[453px] space-y-5'>
                     <button>Our Aircraft</button>
                     <h1 className='text-[clamp(24px,4vw,40px)] font-bold'>Perfectly <br /> <span className='text-brand-primary'>Maintained</span> for <br />
                         Your Flight Training</h1>

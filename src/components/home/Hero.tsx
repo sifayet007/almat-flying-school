@@ -44,7 +44,7 @@ const Hero = () => {
                     />
                 </div>
                 <div className='flex justify-between items-center'>
-                    <div className='max-w-[194px] space-y-2.5'>
+                    <div className='max-w-[194px] space-y-2.5 lg:inline hidden'>
                         <h3 className='text-[24px] text-black/80 font-medium'>Unlock the skies from novice to Navigator</h3>
                         <div className='w-[180px] h-[268px] rounded-full p-3 border border-black/20 bg-white'>
                             <Image src={assets.ppl} alt='ppl' width={158} height={248} className=' w-full h-full object-cover' />
@@ -53,7 +53,7 @@ const Hero = () => {
                     <div className='flex justify-center'>
                         <Image src={assets.airplane} alt='' width={1056} height={491} />
                     </div>
-                    <div className=' bg-gradient-to-bl from-white to-[#FF1414]/20 border-2 border-black/10 rounded-[20px] space-y-2.5 flex flex-col justify-center items-center p-5'>
+                    <div className=' bg-gradient-to-bl hidden from-white to-[#FF1414]/20 border-2 border-black/10 rounded-[20px] space-y-2.5 lg:flex flex-col justify-center items-center p-5'>
                         <span className='text-[18px]'>4.8/5</span>
                         <div className='flex'>
                             <span><IconStarFilled fill='#f6ad55' /></span>
