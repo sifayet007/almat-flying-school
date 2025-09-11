@@ -11,7 +11,7 @@ const review = [
 
 const Hero = () => {
     return (
-        <div className='bg-white'>
+        <div className='bg-white overflow-hidden'>
             <div className='main-container relative'>
                 {/* Decorative Ellipses Wrapper */}
                 <div className=' flex flex-col justify-center items-center pt-10'>

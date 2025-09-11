@@ -14,6 +14,15 @@ import ppl from "./ppl.png";
 import reviewImg1 from "./Ellipse 1.png";
 import reviewImg2 from "./Ellipse 2.png";
 import reviewImg3 from "./Ellipse 4.png";
+import redLine from "./Vector 14.svg";
+import plane1 from "./plane1.png";
+import plane2 from "./plane2.png";
+import plane3 from "./plane3.png";
+import plane4 from "./plane4.png";
+import plane5 from "./plane5.png";
+import plane6 from "./plane6.png";
+import footerBg from "./footerBG.png";
+import footerimg from "./footerimg.png";
 
 const assets = {
   almatMainLogo,
@@ -32,5 +41,14 @@ const assets = {
   reviewImg1,
   reviewImg2,
   reviewImg3,
+  redLine,
+  plane1,
+  plane2,
+  plane3,
+  plane4,
+  plane5,
+  plane6,
+  footerBg,
+  footerimg,
 };
 export default assets;

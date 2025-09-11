@@ -7,7 +7,7 @@ const TopBar = () => {
     return (
         <div className='pt-5 pb-[15px] border-b border-black/10 '>
             <nav className=' flex justify-between main-container'>
-                <div>
+                <div className='md:h-[33px] md:w-[258px] h-[30px] w-[180px] '>
                     <Image src={assets.almatMainLogo.src} alt='' width={258} height={33} />
                 </div>
 
