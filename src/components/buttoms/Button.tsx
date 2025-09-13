@@ -5,13 +5,14 @@ interface IButton {
     icon?: React.ReactNode,
     iconPosition?: "left" | "right",
     textStyle?: string
+    onClick?: () => void
 
 
 }
 
-const Button = ({ children, className, icon, iconPosition, textStyle }: IButton) => {
+const Button = ({ children, className, icon, iconPosition, textStyle, onClick }: IButton) => {
     return (
-        <button className={`${className} flex gap-x-1.5 justify-center items-center`}>
+        <button className={`${className} flex gap-x-1.5 justify-center items-center`} onClick={onClick}>
 
             {
                 iconPosition === 'left' && <span >{icon}</span>

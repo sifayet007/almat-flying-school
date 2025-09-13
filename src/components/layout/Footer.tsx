@@ -60,6 +60,7 @@ const Footer = () => {
                                 <Link
                                     key={index}
                                     href={social.link}
+                                    target='_blank'
                                     className="text-white group relative flex flex-col items-center"
                                 >
 

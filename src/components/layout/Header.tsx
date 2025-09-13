@@ -1,14 +1,15 @@
-import assets from '@/assets';
-import { IconAddressBook, IconContract, IconMenu2, IconSearch, IconShoppingBag } from '@tabler/icons-react';
-import Image from 'next/image';
-import React from 'react';
+
 import TopBar from '../header/TopBar';
+import MegaMenu from '../header/MegaMenu';
+
 
 const Header = () => {
     return (
-        <div>
+        <header className='fixed w-full top-0 z-50 '
+        >
             <TopBar />
-        </div>
+            <MegaMenu className='' />
+        </header>
     );
 };
 

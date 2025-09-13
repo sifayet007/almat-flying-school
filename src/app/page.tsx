@@ -1,4 +1,4 @@
-import MegaMenu from "@/components/header/MegaMenu";
+import DedicatedFlight from "@/components/home/DedicatedFlight";
 import FlightTraining from "@/components/home/FlightTraining";
 import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
@@ -12,10 +12,10 @@ export default function HomePage() {
       <Hero />
       <Services />
       <TrialLesson />
-      {/* <MegaMenu /> */}
       <BookAppointment />
       <FlightTraining />
       <StateData />
+      <DedicatedFlight />
     </div>
   );
 }
