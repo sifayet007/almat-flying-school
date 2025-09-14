@@ -47,23 +47,23 @@ const DedicatedFlight = () => {
     return (
         <div className="main-container mt-[clamp(24px,4vw,60px)] overflow-hidden">
             {/* Top Section */}
-            <div className="flex justify-between items-center flex-col md:flex-row gap-6">
+            <div className="flex justify-between md:items-center flex-col md:flex-row gap-6">
                 <div>
                     <Button
-                        className="py-[11px] px-5 flex items-center justify-center rounded-full bg-[radial-gradient(circle,white_10%,pink_100%)] shadow-md !cursor-text"
+                        className="md:py-[11px] py-[6px] px-5  flex items-center justify-center rounded-full bg-[radial-gradient(circle,white_10%,pink_100%)] shadow-md !cursor-text"
                         icon={<IconPointFilled className="text-blue-600" />}
                         iconPosition="left"
                     >
                         Our Team
                     </Button>
-                    <h1 className="text-[32px] md:text-[44px] font-bold">
-                        Our Dedicated Flight <br /> Instructors{" "}
+                    <h1 className="text-[clamp(24px,4vw,44px)] font-bold md:mt-0 mt-5">
+                        Our Dedicated Flight <br /> Instructors
                         <span className="text-brand-primary">& Staff</span>
                     </h1>
                 </div>
 
                 <div>
-                    <p className="max-w-[500px]">
+                    <p className="md:max-w-[500px]">
                         Almat Flying Academy is a small, friendly flying school and club. We
                         strive to offer commercial school levels of professionalism and
                         structure, within a friendly club environment. We have a great team

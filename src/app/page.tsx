@@ -1,3 +1,4 @@
+import AccordionLast from "@/components/home/Accordion";
 import DedicatedFlight from "@/components/home/DedicatedFlight";
 import FlightTraining from "@/components/home/FlightTraining";
 import Hero from "@/components/home/Hero";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <FlightTraining />
       <StateData />
       <DedicatedFlight />
+      <AccordionLast />
     </div>
   );
 }

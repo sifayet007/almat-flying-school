@@ -11,10 +11,10 @@ const review = [
 
 const Hero = () => {
     return (
-        <div className='bg-white overflow-hidden'>
+        <div className='bg-white overflow-hidden rounded-b-[clamp(20px,4vw,60px)]'>
             <div className='main-container relative'>
                 {/* Decorative Ellipses Wrapper */}
-                <div className=' flex flex-col justify-center items-center pt-36'>
+                <div className=' flex flex-col justify-center items-center md:pt-36 pt-20'>
                     <div className='absolute inset-0 pointer-events-none'>
                         <div className='w-[230px] h-[335px] bg-[#EA00FF] rounded-full opacity-50 blur-[150px] absolute top-0 right-0 translate-x-1/2'></div>
                         <div className='w-[230px] h-[335px] bg-[#6155F5] rounded-full opacity-50 blur-[150px] absolute top-0 left-0 -translate-x-1/2'></div>

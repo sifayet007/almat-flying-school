@@ -8,7 +8,9 @@ const Header = () => {
         <header className='fixed w-full top-0 z-50 '
         >
             <TopBar />
+
             <MegaMenu className='' />
+
         </header>
     );
 };

@@ -13,7 +13,7 @@ const MegaMenu = ({ className }: { className: string }) => {
     const [hoveredIndexTrialLessons, setHoveredIndexTrialLessons] = useState(0);
     const [hoveredFlyingSchool, setHoveredFlyingSchool] = useState(0)
     return (
-        <div className={`main-container appearance-auto flex justify-between py-2 relative ${className}`}>
+        <div className={`main-container hidden appearance-auto lg:flex gap-2.5 justify-between py-2 relative ${className}`}>
             <div>
                 <Link href={'/'} className='text-brand-primary font-bold'>Home</Link>
 
@@ -21,10 +21,10 @@ const MegaMenu = ({ className }: { className: string }) => {
             {/*   Free Info */}
             <div className='group'>
                 <h1 className='flex gap-x-5 cursor-pointer group-hover:text-brand-primary'>
-                    <span>
+                    <span className='line-clamp-1'>
                         Free Info
                     </span>
-                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown /></span>
+                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown size={20} /></span>
                 </h1>
                 <div className='hidden p-5 drop-shadow-2xl rounded-2xl duration-300 bg-white group-hover:flex transition-all absolute top-8'>
                     <div className='max-w-[400px] space-y-5'>
@@ -85,11 +85,11 @@ const MegaMenu = ({ className }: { className: string }) => {
 
             </div>
             <div className='group'>
-                <h1 className='flex gap-x-5 cursor-pointer group-hover:text-brand-primary'>
-                    <span>
+                <h1 className='flex gap-x-3 cursor-pointer group-hover:text-brand-primary'>
+                    <span className='line-clamp-1'>
                         Trial Lessons & Experiences
                     </span>
-                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown /></span>
+                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown size={20} /></span>
                 </h1>
                 <div className="gap-[35px] drop-shadow-2xl hidden p-5 rounded-2xl duration-300 bg-white group-hover:flex transition-all absolute top-8">
                     {/* Left side list */}
@@ -142,9 +142,9 @@ const MegaMenu = ({ className }: { className: string }) => {
             </div>
             <div className='group'>
 
-                <h1 className='flex gap-x-5 cursor-pointer group-hover:text-brand-primary'>
-                    <span>Flying School</span>
-                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown /></span>
+                <h1 className='flex gap-x-3 cursor-pointer group-hover:text-brand-primary'>
+                    <span className='line-clamp-1'>Flying School</span>
+                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown size={20} /></span>
                 </h1>
                 <div className="gap-[35px] hidden group-hover:opacity-100 opacity-0 p-5 drop-shadow-2xl rounded-2xl duration-300 bg-white group-hover:flex transition-all absolute top-8">
                     {/* Left side list */}
@@ -204,34 +204,33 @@ const MegaMenu = ({ className }: { className: string }) => {
                 </div>
             </div>
             <div>
-                <h3 className='flex gap-x-5 cursor-pointer group-hover:text-brand-primary'>Hour Building</h3>
-
+                <h3 className='gap-x-5 line-clamp-1  cursor-pointer group-hover:text-brand-primary'>Hour Building</h3>
             </div>
             <div className='group'>
-                <h1 className='flex gap-x-5 cursor-pointer group-hover:text-brand-primary'>
-                    <span>
+                <h1 className='flex gap-x-3 cursor-pointer group-hover:text-brand-primary'>
+                    <span className='line-clamp-1'>
                         PPL & LAPL Theory
                     </span>
-                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown /></span>
+                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown size={20} /></span>
                 </h1>
 
             </div>
 
             <div className='group'>
 
-                <h1 className='flex gap-x-5 cursor-pointer group-hover:text-brand-primary'>
-                    <span>
+                <h1 className='flex gap-x-3 cursor-pointer group-hover:text-brand-primary'>
+                    <span className='line-clamp-1'>
                         PPL & LAPL Theory
                     </span>
-                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown /></span>
+                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown size={20} /></span>
                 </h1>
             </div>
             <div className='group'>
-                <h1 className='flex gap-x-5 cursor-pointer group-hover:text-brand-primary'>
+                <h1 className='flex gap-x-3 cursor-pointer group-hover:text-brand-primary'>
                     <span>
                         Club
                     </span>
-                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown /></span>
+                    <span className='group-hover:rotate-180 duration-300'><IconChevronDown size={20} /></span>
                 </h1>
                 <div className="gap-[35px] hidden p-5 rounded-2xl duration-300 bg-white group-hover:flex transition-all absolute top-8 right-0 drop-shadow-2xl">
                     {/* Left side list */}
@@ -282,7 +281,7 @@ const MegaMenu = ({ className }: { className: string }) => {
                 </div>
 
             </div>
-            <div className='cursor-pointer hover:text-brand-primary duration-300'>
+            <div className='cursor-pointer line-clamp-1 hover:text-brand-primary duration-300'>
                 About Us
             </div>
 

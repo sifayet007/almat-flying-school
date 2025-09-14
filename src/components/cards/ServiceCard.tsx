@@ -1,7 +1,8 @@
 import { ServiceDataType } from '@/interfaces/serviceDatatype.interface';
-import { IconTargetArrow } from '@tabler/icons-react';
+import { IconArrowUpRight } from '@tabler/icons-react';
 import Image from 'next/image';
 import React from 'react';
+import Button from '../buttoms/Button';
 type props = {
     data: ServiceDataType
 }
@@ -18,9 +19,12 @@ const ServiceCard = ({ data }: props) => {
                     <p>{data.description}</p>
                 </div>
                 <div>
-                    <span className='bg-gradient-to-b via-white w-[40px] h-10 rounded-full'>
-                        <IconTargetArrow />
-                    </span>
+                    <Button
+
+                        className="w-10 h-10 flex !gap-0 items-center justify-center rounded-full bg-[radial-gradient(circle,white_10%,#5EA4FFB2)] shadow-md hover:scale-105 transition"
+                        icon={<IconArrowUpRight size={18} />}
+                        iconPosition="left"
+                    />
                 </div>
 
             </div>

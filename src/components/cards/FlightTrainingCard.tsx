@@ -2,12 +2,11 @@ import React from 'react';
 import Button from '../buttoms/Button';
 import { IconSelect } from '@tabler/icons-react';
 import Image from 'next/image';
-import assets from '@/assets';
 
-const FlightTrainingCard = ({ plan }: { plan: any }) => {
+const FlightTrainingCard = ({ plan, }: { plan: any, }) => {
 
     return (
-        <div className='bg-white drop-shadow-md'>
+        <div className={`bg-white drop-shadow-md `}>
             <div className='w-full aspect-[300/200]'>
                 <Image src={plan.image} alt='Piper PA28 G-BAHF' className='w-full h-full object-cover' />
             </div>
