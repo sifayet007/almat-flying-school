@@ -57,15 +57,17 @@ export default function StudentTestimonial() {
     }
     return (
         <section className="main-container py-16">
-            <div className="flex flex-col relative overflow-hidden justify-between lg:flex-row md:gap-[30px] gap-5 items-center bg-white rounded-2xl md:px-[60px]">
+            <div className="flex flex-col lg:flex-row relative overflow-hidden justify-between  md:gap-[30px] gap-5 items-center bg-white rounded-2xl md:px-[60px]">
                 {/* Left Side */}
 
+                {/* elips */}
 
                 <div className="absolute w-[506px] h-[242px] bg-white blur-3xl top-0 -translate-y-1/2 right-0 z-10">
-                </div>
+
                 <div className="absolute w-[506px] h-[242px] bg-white blur-3xl bottom-0 translate-y-1/2 right-0 z-10">
                 </div>
-                <div className="space-y-5">
+                </div>
+                <div className="space-y-5 md:px-0 px-5">
                     <Button className="px-5 py-[11px] rounded-full bg-red-100 text-brand-primary font-medium text-sm"
                         icon={<IconPointFilled size={20} />} iconPosition="left" children="Testimonial" />
 
@@ -99,10 +101,10 @@ export default function StudentTestimonial() {
                 {/* Center Dial */}
 
 
-                <button className="w-[44px] h-[32px] rotate-90 md:rotate-0 rounded-full bg-gradient-to-r from-white to-brand-primary text-white flex items-center justify-center shadow-lg">
-                    <IconPlane size={20} />
-                </button>
 
+                <div className="lg:rotate-0 rotate-90 max-w-[150px] max-h-[430px] md:px-0 px-5">
+                    <Image src={assets_student.plan} alt="" height={430} width={150} />
+                </div> 
                 {/* Right Side */}
                 <div className=" flex flex-col gap-5">
                     {testimonials.map((student, index) => (
@@ -110,7 +112,7 @@ export default function StudentTestimonial() {
                             key={index}
                             className={`max-w-[390px] flex items-center gap-2.5 bg-white shadow-md rounded-xl md:p-5 p-3 border border-transparent hover:border-blue-400 hover:shadow-blue-200 transition `}
                         >
-                            <div className="w-[110px] relative h-[110px]">
+                            <div className="w-[110px] relative h-[110px] ">
                                 <Image
                                     src={student.image}
                                     alt={student.name}
