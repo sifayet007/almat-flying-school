@@ -1,9 +1,14 @@
 import React from 'react';
 import Button from '../buttoms/Button';
 import { IconSelect } from '@tabler/icons-react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
+interface IPlan {
+    image: StaticImageData,
+    title: string,
+    description: string
+}
 
-const FlightTrainingCard = ({ plan, }: { plan: any, }) => {
+const FlightTrainingCard = ({ plan, }: { plan: IPlan, }) => {
 
     return (
         <div className={`bg-white drop-shadow-md `}>
