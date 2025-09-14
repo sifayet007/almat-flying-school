@@ -25,6 +25,8 @@ const ServiceCard = ({ data }: props) => {
                         icon={<IconArrowUpRight size={18} />}
                         iconPosition="left"
                     />
+
+
                 </div>
 
             </div>
