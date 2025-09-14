@@ -1,7 +1,7 @@
 import React from 'react';
 interface IButton {
     className: string,
-    children?: string,
+    buttonText?: string,
     icon?: React.ReactNode,
     iconPosition?: "left" | "right",
     textStyle?: string
@@ -10,14 +10,14 @@ interface IButton {
 
 }
 
-const Button = ({ children, className, icon, iconPosition, textStyle, onClick }: IButton) => {
+const Button = ({ buttonText, className, icon, iconPosition, textStyle, onClick }: IButton) => {
     return (
         <button className={`${className} flex gap-x-1.5 justify-center items-center`} onClick={onClick}>
 
             {
                 iconPosition === 'left' && <span >{icon}</span>
             }
-            <span className={`${textStyle}`}>{children}</span>
+            <span className={`${textStyle}`}>{buttonText}</span>
             {
                 iconPosition === 'right' && <span >{icon}</span>
             }

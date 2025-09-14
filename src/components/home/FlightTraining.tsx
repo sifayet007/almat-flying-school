@@ -21,7 +21,8 @@ const FlightTraining = () => {
         checkScreen();
         window.addEventListener("resize", checkScreen);
         return () => window.removeEventListener("resize", checkScreen);
-    }, []);
+
+    }, [isDesktop]);
 
     const startAnimation = () => {
         controlsUp.start({
@@ -53,7 +54,7 @@ const FlightTraining = () => {
 
     useEffect(() => {
         if (isDesktop) startAnimation();
-    }, [isDesktop]);
+    },);
 
     return (
         <div className="main-container mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5">

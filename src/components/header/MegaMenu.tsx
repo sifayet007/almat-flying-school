@@ -185,7 +185,7 @@ const MegaMenu = ({ className }: { className: string }) => {
                         <div className='flex justify-between items-center'>
                             <h4 className='font-bold'>Pilot Licence Information
                             </h4>
-                            <Button children='View All' className='uppercase border-2 rounded-[10px] border-black/10 py-[10px] px-[14px] text-sm' icon={<IconArrowRight size={18} />} />
+                            <Button buttonText='View All' className='uppercase border-2 rounded-[10px] border-black/10 py-[10px] px-[14px] text-sm' icon={<IconArrowRight size={18} />} />
                         </div>
                         <div className="grid grid-cols-3 gap-[10px] mt-[14px]">
                             {Object.values(flyingSchoolData[hoveredFlyingSchool].image).map((imgSrc, i) => (

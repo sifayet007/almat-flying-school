@@ -40,7 +40,7 @@ const BookAppointment = ({ className }: { className?: string }) => {
 
             <motion.div className="flex items-center justify-center mt-10 relative">
                 <Button
-                    children="Book Now"
+                    buttonText="Book Now"
                     className="z-10 py-[clamp(8px,2.5vw,12px)] rounded-full text-[clamp(12px,2.5vw,16px)] transition-all shadow-[0_0_15px_3px_rgba(255,255,255,0.5)] uppercase bg-white/20 px-[clamp(14px,2.5vw,20px)] text-white"
                     icon={
                         <IconArrowUpRight

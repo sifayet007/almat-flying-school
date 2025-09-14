@@ -1,6 +1,7 @@
 import React from 'react';
 import TrialLessonCard from '../cards/TrialLessonCard';
 import trialLessonData from '@/constants/trialLesson.constant';
+import { ITrialLessonCardProps } from '@/interfaces/trialLesson.interfaces';
 
 const TrialLesson = () => {
     return (
@@ -18,7 +19,7 @@ const TrialLesson = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[clamp(24px,4vw,50px)]'>
                 {
-                    trialLessonData.map((data: any) => (
+                    trialLessonData.map((data: ITrialLessonCardProps) => (
                         <TrialLessonCard key={data.id} data={data} />
                     ))
 

@@ -34,7 +34,7 @@ const Footer = () => {
                                 <IconMail stroke={1} size={30} />
                                 <input className='w-full outline-none text-white py-[clamp(4px,1vw,14px)] placeholder:md:text-base placeholder:text-xs' placeholder='Enter your email' type="email" name="" id="" />
                             </div>
-                            <Button textStyle='md:inline hidden' className='bg-white text-brand-primary p-2  md:py-[clamp(4px,1vw,14px)] text-[clamp(12px,2.5vw,16px)]  md:rounded-[20px] rounded-full md:px-[clamp(8px,2.5vw,12px)]' children='Subscribe' icon={<IconArrowRight className='size-[clamp(14px,2.5vw,16px)]' />} iconPosition='right'></Button>
+                            <Button textStyle='md:inline hidden' className='bg-white text-brand-primary p-2  md:py-[clamp(4px,1vw,14px)] text-[clamp(12px,2.5vw,16px)]  md:rounded-[20px] rounded-full md:px-[clamp(8px,2.5vw,12px)]' buttonText='Subscribe' icon={<IconArrowRight className='size-[clamp(14px,2.5vw,16px)]' />} iconPosition='right'></Button>
                         </form>
                     </div>
                     <FooterMenu data={quickLinks} sectionKey='Quick Link' />

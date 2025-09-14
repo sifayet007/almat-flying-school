@@ -20,8 +20,8 @@ const TrialLessonCard = ({ data }: { data: ITrialLessonCardProps }) => {
 
                 </div>
                 <div className='flex justify-between gap-3 mt-5'>
-                    <Button className='py-[clamp(4px,1vw,8px)] md:text-base text-sm border w-full rounded-full border-black/10' children='Buy Now' />
-                    <Button className='py-[8px] md:text-base text-sm lg:text-[clamp(12px,0.5vw,16px)] rounded-full w-full bg-brand-primary text-white' children='Add to Basket' icon={<IconShoppingBag />} iconPosition='left' />
+                    <Button className='py-[clamp(4px,1vw,8px)] md:text-base text-sm border w-full rounded-full border-black/10' buttonText='Buy Now' />
+                    <Button className='py-[8px] md:text-base text-sm lg:text-[clamp(12px,0.5vw,16px)] rounded-full w-full bg-brand-primary text-white' buttonText='Add to Basket' icon={<IconShoppingBag />} iconPosition='left' />
                 </div>
             </div>
         </div>

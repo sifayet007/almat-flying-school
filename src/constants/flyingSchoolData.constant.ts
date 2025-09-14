@@ -1,4 +1,3 @@
-import assets from "@/assets";
 import { assets_flyingSchool } from "@/assets/flying-school";
 
 export const flyingSchoolData = [

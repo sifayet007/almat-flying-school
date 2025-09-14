@@ -1,4 +1,4 @@
-import { IconArrowRight, IconPlaneArrival, IconStar, IconStarFilled } from '@tabler/icons-react';
+import { IconArrowRight, IconPlaneArrival, IconStarFilled } from '@tabler/icons-react';
 import React from 'react';
 import Button from '../buttoms/Button';
 import Image from 'next/image';
@@ -38,7 +38,7 @@ const Hero = () => {
 
                     <Button
                         className='py-[clamp(8px,2.5vw,10px)] px-[clamp(12px,2.5vw,16px)] md:text-base text-sm bg-brand-primary rounded-full border-2 border-white text-white mt-[15px]'
-                        children='Contact Us'
+                        buttonText='Contact Us'
                         icon={<IconArrowRight className='size-[clamp(16px,2.5vw,20px)]' />}
                         iconPosition='right'
                     />

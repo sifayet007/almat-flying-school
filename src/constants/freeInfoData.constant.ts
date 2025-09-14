@@ -36,7 +36,7 @@ export const freeInfo2 = [
   {
     title1: "Free Info",
 
-    children: [
+    buttonText: [
       {
         title2: "",
         description:

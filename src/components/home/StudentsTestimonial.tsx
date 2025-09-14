@@ -1,8 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { IconStar, IconEye, IconPencil, IconStarFilled, IconPlane, IconPointFilled, IconBrandGoogle } from "@tabler/icons-react";
+import { IconStar, IconEye, IconPencil, IconStarFilled, IconPointFilled } from "@tabler/icons-react";
 import { assets_student } from "@/assets/student's";
 import Button from "../buttoms/Button";
 import { FcGoogle } from "react-icons/fc";
@@ -46,15 +45,7 @@ const testimonials = [
 ];
 
 export default function StudentTestimonial() {
-    function getClassName(index: number, current: number, length: number) {
-        const offset = (index - current + length) % length;
-        if (offset === 0) return "center";
-        if (offset === 1) return "right-1";
-        if (offset === 2) return "right-2";
-        if (offset === length - 1) return "left-1";
-        if (offset === length - 2) return "left-2";
-        return "hidden";
-    }
+
     return (
         <section className="main-container py-16">
             <div className="flex flex-col lg:flex-row relative overflow-hidden justify-between  md:gap-[30px] gap-5 items-center bg-white rounded-2xl md:px-[60px]">
@@ -69,7 +60,7 @@ export default function StudentTestimonial() {
                 </div>
                 <div className="space-y-5 md:px-0 px-5">
                     <Button className="px-5 py-[11px] rounded-full bg-red-100 text-brand-primary font-medium text-sm"
-                        icon={<IconPointFilled size={20} />} iconPosition="left" children="Testimonial" />
+                        icon={<IconPointFilled size={20} />} iconPosition="left" buttonText="Testimonial" />
 
 
                     <h2 className="text-[44px] font-bold leading-snug">

@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import Link from "next/link";
 import React from "react";
 
@@ -8,7 +7,7 @@ const FooterMenu = ({
     ifLink = false,
     className
 }: {
-    data: any[];
+        data: string[] | any[];
     sectionKey: string;
     ifLink?: boolean;
     className?: string

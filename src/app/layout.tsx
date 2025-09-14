@@ -20,9 +20,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  buttonText,
 }: Readonly<{
-  children: React.ReactNode;
+  buttonText: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -33,7 +33,7 @@ export default function RootLayout({
 
         <HeaderV2 />
         <div>
-          {children}
+          {buttonText}
         </div>
         <Footer />
       </body>

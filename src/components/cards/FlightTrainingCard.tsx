@@ -18,7 +18,7 @@ const FlightTrainingCard = ({ plan, }: { plan: IPlan, }) => {
             <div className='p-4'>
                 <h1 className='font-bold uppercase'>{plan.title}</h1>
                 <p className='text-[12px]'>{plan.description}</p>
-                <Button children='Read More' icon={<IconSelect />} iconPosition='right' className='text-brand-primary text-[12px]' />
+                <Button buttonText='Read More' icon={<IconSelect />} iconPosition='right' className='text-brand-primary text-[12px]' />
             </div>
 
         </div>
