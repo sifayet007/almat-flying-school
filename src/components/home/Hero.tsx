@@ -17,9 +17,9 @@ const Hero = () => {
 
             <div className='md:w-[230px] md:h-[335px] w-[100px] h-[150px] bg-[#6155F5] rounded-full md:opacity-50 opacity-100 blur-[150px] absolute top-0 left-0 '></div>
 
-            <div className='main-container relative'>
+            <div className='main-container relative  pt-[clamp(80px,10vw,144px)]'>
 
-                <div className=' flex flex-col justify-center items-center md:pt-36 pt-20'>
+                <div className=' flex flex-col justify-center items-center '>
                     <div className='absolute inset-0 pointer-events-none'>
 
             </div>
