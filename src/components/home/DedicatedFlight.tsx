@@ -53,9 +53,9 @@ const DedicatedFlight = () => {
                         className="md:py-[11px] py-[6px] px-5  flex items-center justify-center rounded-full bg-[radial-gradient(circle,white_10%,pink_100%)] shadow-md !cursor-text"
                         icon={<IconPointFilled className="text-blue-600" />}
                         iconPosition="left"
-                    >
-                        Our Team
-                    </Button>
+                        buttonText="  Our Team" />
+
+
                     <h1 className="text-[clamp(24px,4vw,44px)] font-bold md:mt-0 mt-5">
                         Our Dedicated Flight <br /> Instructors
                         <span className="text-brand-primary">& Staff</span>

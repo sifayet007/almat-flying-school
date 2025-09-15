@@ -1,3 +1,4 @@
+import { IContactType } from "@/interfaces/contactDataType.interface";
 import Link from "next/link";
 import React from "react";
 
@@ -7,7 +8,7 @@ const FooterMenu = ({
     ifLink = false,
     className
 }: {
-        data: string[] | any[];
+        data: string[] | IContactType[];
     sectionKey: string;
     ifLink?: boolean;
     className?: string
@@ -38,7 +39,7 @@ const FooterMenu = ({
                 return (
                     <div key={index} className="flex items-center gap-2 text-white">
                         {item.icon && React.isValidElement(item.icon)
-                            ? React.cloneElement(item.icon, { size: 18 })
+                            ? React.cloneElement(item.icon,)
                             : item.icon && <item.icon size={18} />}
                         <span className="text-white/80 text-[clamp(12px,2.5vw,16px)]">{item.value}</span>
                     </div>
