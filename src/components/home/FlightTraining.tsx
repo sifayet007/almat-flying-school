@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import FlightTrainingCard from '../cards/FlightTrainingCard';
 import { motion, useMotionValue, useAnimation } from "framer-motion";
 import planes from '@/constants/flightTraining.constants';
-import IneerShadow from '../ui/IneerShadow';
+import InnerShadow from '../ui/InnerShadow';
 import { IconPointFilled } from '@tabler/icons-react';
 
 const FlightTraining = () => {
@@ -64,7 +64,7 @@ const FlightTraining = () => {
             {/* Left Side */}
             <div className="w-full">
                 <div className="md:max-w-[453px] space-y-5">
-                    <IneerShadow icon={<IconPointFilled className='text-blue-600' />} text='Our Aircraft' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
+                    <InnerShadow icon={<IconPointFilled className='text-blue-600' />} text='Our Aircraft' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
                     <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-center text-zinc-900 mb-1">
                         Frequently Asked Questions

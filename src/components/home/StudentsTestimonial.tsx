@@ -5,7 +5,7 @@ import { IconStar, IconEye, IconPencil, IconPointFilled } from "@tabler/icons-re
 import { assets_student } from "@/assets/students"; // ✅ fixed folder name
 import Button from "../buttoms/Button";
 import { FcGoogle } from "react-icons/fc";
-import IneerShadow from "../ui/IneerShadow";
+import InnerShadow from "../ui/InnerShadow";
 
 const testimonials = [{ name: "Arlene McCoy", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student1, }, { name: "Jane Cooper", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student2, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student3, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student4, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student5, },];
 
@@ -19,7 +19,7 @@ export default function StudentTestimonial() {
 
                 {/* Left Side */}
                 <div className="space-y-5">
-                    <IneerShadow icon={<IconPointFilled className='text-brand-primary' />} text='Trial Lesson' shadowColor='#C5123033' />
+                    <InnerShadow icon={<IconPointFilled className='text-brand-primary' />} text='Trial Lesson' shadowColor='#C5123033' />
 
 
                     <h2 className="text-[clamp(24px,2.5vw,44px)] font-bold leading-snug">

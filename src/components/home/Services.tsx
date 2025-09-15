@@ -3,13 +3,13 @@ import ServiceCard from '../cards/ServiceCard';
 import { servicesData } from '@/constants/serviceData.constant';
 import { ServiceDataType } from '@/interfaces/serviceDatatype.interface';
 import { IconPointFilled } from '@tabler/icons-react';
-import IneerShadow from '../ui/IneerShadow';
+import InnerShadow from '../ui/InnerShadow';
 
 const Services = () => {
     return (
         <div className='main-container flex flex-col justify-center items-center mt-[clamp(24px,5vw,78px)]'>
             <div className='text-center flex flex-col items-center space-y-4'>
-                <IneerShadow icon={<IconPointFilled className='text-blue-600' />} text='Free Learn' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
+                <InnerShadow icon={<IconPointFilled className='text-blue-600' />} text='Free Learn' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
                 <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-center text-zinc-900 mb-1">
                     Frequently Asked Questions

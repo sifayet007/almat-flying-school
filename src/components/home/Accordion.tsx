@@ -1,7 +1,7 @@
 "use client";
 import { IconChevronDown, IconPointFilled } from "@tabler/icons-react";
 import React, { useState } from "react";
-import IneerShadow from "../ui/IneerShadow";
+import InnerShadow from "../ui/InnerShadow";
 
 // --- Types ---
 interface AccordionItem {
@@ -90,7 +90,7 @@ const AccordionLast: React.FC = () => {
                 <div className="p-6 md:space-y-4">
 
                     <div className="space-y-5 flex flex-col justify-center items-center">
-                        <IneerShadow icon={<IconPointFilled className='text-blue-600' />} text='FAQ' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
+                        <InnerShadow icon={<IconPointFilled className='text-blue-600' />} text='FAQ' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
                     <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-center text-zinc-900 mb-1">
                         Frequently Asked Questions

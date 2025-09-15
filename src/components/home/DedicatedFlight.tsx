@@ -8,7 +8,7 @@ import {
     IconArrowRight,
     IconPointFilled,
 } from "@tabler/icons-react";
-import IneerShadow from "../ui/IneerShadow";
+import InnerShadow from "../ui/InnerShadow";
 
 const DedicatedFlight = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,7 +50,7 @@ const DedicatedFlight = () => {
             {/* Top Section */}
             <div className="flex justify-between md:items-center flex-col md:flex-row gap-6">
                 <div className="space-y-5">
-                    <IneerShadow icon={<IconPointFilled className='text-blue-600' />} text='Our Team' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
+                    <InnerShadow icon={<IconPointFilled className='text-blue-600' />} text='Our Team' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
                     <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-zinc-900 mb-1">
                         Frequently Asked Questions <br />

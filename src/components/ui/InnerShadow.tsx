@@ -7,7 +7,7 @@ interface InderShadowProps {
     className?: string
 }
 
-const IneerShadow = ({
+const InnerShadow = ({
     icon,
     text,
     shadowColor = "rgba(94,164,255,0.7)",
@@ -26,4 +26,4 @@ const IneerShadow = ({
     );
 };
 
-export default IneerShadow;
+export default InnerShadow;
