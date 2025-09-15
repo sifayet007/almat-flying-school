@@ -31,7 +31,7 @@ const Footer = () => {
                         <p className='text-white text-[clamp(12px,2.5vw,16px)]'>We imagine and build experiences, products and businesses that disrupt the status quo, win hearts and realize the future. Explore how we work</p>
                         <form className='bg-white/30 flex w-full justify-between items-center p-1  border-2 border-white rounded-[20px]'>
                             <div className='w-full flex items-center gap-x-[clamp(4px,2.5vw,8px)] text-white'>
-                                <IconMail stroke={1} size={30} />
+                                <IconMail stroke={1} size={30} className='ml-1' />
                                 <input className='w-full outline-none text-white py-[clamp(4px,1vw,14px)] placeholder:md:text-base placeholder:text-xs' placeholder='Enter your email' type="email" name="" id="" />
                             </div>
                             <Button textStyle='md:inline hidden' className='bg-white text-brand-primary p-2  md:py-[clamp(4px,1vw,14px)] text-[clamp(12px,2.5vw,16px)]  md:rounded-[20px] rounded-full md:px-[clamp(8px,2.5vw,12px)]' buttonText='Subscribe' icon={<IconArrowRight className='size-[clamp(14px,2.5vw,16px)]' />} iconPosition='right'></Button>

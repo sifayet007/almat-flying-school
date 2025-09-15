@@ -22,7 +22,7 @@ export default function StudentTestimonial() {
                     <InnerShadow icon={<IconPointFilled className='text-brand-primary' />} text='Trial Lesson' shadowColor='#C5123033' />
 
 
-                    <h2 className="text-[clamp(24px,2.5vw,44px)] font-bold leading-snug">
+                    <h2 className="text-[clamp(24px,2.5vw,44px)] font-bold">
                         What Our <span className="text-brand-primary italic">Student</span>
                         <br /> Say About Us
                     </h2>
@@ -49,7 +49,8 @@ export default function StudentTestimonial() {
                 </div>
 
                 {/* Center Dial */}
-                <div className="lg:rotate-0 rotate-90 w-[150px] lg:flex hidden h-[430px] md:px-0 px-5">
+                <div className=""> 
+                    <div className="lg:rotate-0 rotate-90 w-[150px] lg:flex hidden h-[430px] md:px-0 px-5">
                     <Image
                         src={assets_student.plan}
                         alt="plane illustration"
@@ -57,6 +58,7 @@ export default function StudentTestimonial() {
                         width={150}
                         className="w-full h-full object-cover"
                     />
+                    </div>
                 </div>
 
                 {/* Right Side */}

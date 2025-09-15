@@ -52,7 +52,7 @@ const DedicatedFlight = () => {
                 <div className="space-y-5">
                     <InnerShadow icon={<IconPointFilled className='text-blue-600' />} text='Our Team' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
-                    <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-zinc-900 mb-1">
+                    <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-zinc-900 mb-1 ">
                         Frequently Asked Questions <br />
                         Our Dedicated Flight <br /> Instructors
                         <span className="text-brand-primary"> & Staff</span>
