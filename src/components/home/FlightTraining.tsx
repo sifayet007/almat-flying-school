@@ -57,7 +57,7 @@ const FlightTraining = () => {
     },);
 
     return (
-        <div className="main-container mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5">
+        <div className="main-container mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5 overflow-hidden">
 
             {/* Left Side */}
             <div className="w-full">
@@ -82,6 +82,11 @@ const FlightTraining = () => {
                 onMouseEnter={handlePause}
                 onMouseLeave={handleResume}
             >
+
+                <div className="absolute w-[700px] lg:block hidden h-[200px] bg-white blur-3xl top-0 -translate-y-1/2 right-0 z-10"></div>
+
+                <div className="absolute w-[700px] lg:block hidden h-[200px] bg-white blur-3xl bottom-0 translate-y-1/2 right-0 z-10"></div>
+
                 {isDesktop ? (
                     <>
                         {/* Left Column - Scroll Up */}
