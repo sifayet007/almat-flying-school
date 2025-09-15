@@ -5,6 +5,7 @@ import { IconStar, IconEye, IconPencil, IconPointFilled } from "@tabler/icons-re
 import { assets_student } from "@/assets/students"; // ✅ fixed folder name
 import Button from "../buttoms/Button";
 import { FcGoogle } from "react-icons/fc";
+import IneerShadow from "../ui/IneerShadow";
 
 const testimonials = [{ name: "Arlene McCoy", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student1, }, { name: "Jane Cooper", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student2, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student3, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student4, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student5, },];
 
@@ -18,12 +19,8 @@ export default function StudentTestimonial() {
 
                 {/* Left Side */}
                 <div className="space-y-5">
-                    <Button
-                        className="px-5 py-[11px] rounded-full bg-red-100 text-brand-primary font-medium text-sm"
-                        icon={<IconPointFilled size={20} />}
-                        iconPosition="left"
-                        buttonText="Testimonial"
-                    />
+                    <IneerShadow icon={<IconPointFilled className='text-brand-primary' />} text='Trial Lesson' shadowColor='#C5123033' />
+
 
                     <h2 className="text-[clamp(24px,2.5vw,44px)] font-bold leading-snug">
                         What Our <span className="text-brand-primary italic">Student</span>

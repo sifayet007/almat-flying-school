@@ -2,16 +2,17 @@ import React from 'react';
 import TrialLessonCard from '../cards/TrialLessonCard';
 import trialLessonData from '@/constants/trialLesson.constant';
 import { ITrialLessonCardProps } from '@/interfaces/trialLesson.interfaces';
+import { IconPointFilled } from '@tabler/icons-react';
+import IneerShadow from '../ui/IneerShadow';
 
 const TrialLesson = () => {
     return (
         <div className='bg-white main-container mt-[42px] lg:px-[30px] rounded-2xl py-[50px]'>
             <div className='flex md:flex-row flex-col justify-between md:space-y-0 space-y-5'>
-                <div>
-                    <span className='bg-gradient-to-b p-5 via-white from-yellow-400'>
-                        Trial Lesson
-                    </span>
-                    <h1 className='text-[clamp(24px,4vw,40px)] font-bold'>Trial Flying
+                <div className='space-y-5'>
+                    <IneerShadow icon={<IconPointFilled className='text-yellow-400' />} text='Trial Lesson' shadowColor='#FFF0B5B2' />
+
+                    <h1 className='text-[clamp(24px,4vw,40px)] font-bold'>Trial Flying <br className='md:block hidden' />
                         <span className='text-brand-primary '> Lessons</span>
                     </h1>
                 </div>

@@ -1,6 +1,7 @@
 "use client";
 import { IconChevronDown, IconPointFilled } from "@tabler/icons-react";
 import React, { useState } from "react";
+import IneerShadow from "../ui/IneerShadow";
 
 // --- Types ---
 interface AccordionItem {
@@ -86,14 +87,15 @@ const AccordionLast: React.FC = () => {
     return (
         <div className="main-container flex items-center justify-center md:p-[60px] pb-5 bg-white mt-[clamp(24px,4vw,60px)] rounded-[20px]">
             <div className="w-full mx-auto bg-white rounded-[20px] overflow-hidden">
-                <div className="p-6">
-                    <div className='flex justify-center items-center'>
-                        <span><IconPointFilled className='text-blue-700' /></span>
-                        <span>FAQ</span>
-                    </div>
+                <div className="p-6 md:space-y-4">
+
+                    <div className="space-y-5 flex flex-col justify-center items-center">
+                        <IneerShadow icon={<IconPointFilled className='text-blue-600' />} text='FAQ' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
+
                     <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-center text-zinc-900 mb-1">
                         Frequently Asked Questions
                     </h1>
+                    </div>
                     <p className="text-center text-zinc-500 md:mb-6 line-clamp-2">
                         Find quick answers to the most common questions about our flight training programs, <br className="hidden md:block" /> aircraft, safety measures, and enrollment process..
                     </p>

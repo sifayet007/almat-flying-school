@@ -8,6 +8,7 @@ import {
     IconArrowRight,
     IconPointFilled,
 } from "@tabler/icons-react";
+import IneerShadow from "../ui/IneerShadow";
 
 const DedicatedFlight = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,18 +49,16 @@ const DedicatedFlight = () => {
         <div className="main-container mt-[clamp(24px,4vw,60px)] overflow-hidden">
             {/* Top Section */}
             <div className="flex justify-between md:items-center flex-col md:flex-row gap-6">
-                <div>
-                    <Button
-                        className="md:py-[11px] py-[6px] px-5  flex items-center justify-center rounded-full bg-[radial-gradient(circle,white_10%,pink_100%)] shadow-md !cursor-text"
-                        icon={<IconPointFilled className="text-blue-600" />}
-                        iconPosition="left"
-                        buttonText="  Our Team" />
+                <div className="space-y-5">
+                    <IneerShadow icon={<IconPointFilled className='text-blue-600' />} text='Our Team' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
-
-                    <h1 className="text-[clamp(24px,4vw,44px)] font-bold md:mt-0 mt-5">
+                    <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-zinc-900 mb-1">
+                        Frequently Asked Questions <br />
                         Our Dedicated Flight <br /> Instructors
-                        <span className="text-brand-primary">& Staff</span>
+                        <span className="text-brand-primary"> & Staff</span>
                     </h1>
+
+
                 </div>
 
                 <div>
