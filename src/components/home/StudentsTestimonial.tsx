@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import { IconStar, IconEye, IconPencil, IconPointFilled } from "@tabler/icons-react";
-import { assets_student } from "@/assets/students"; // ✅ fixed folder name
-import Button from "../buttoms/Button";
+import { assets_student } from "@/assets/students";
 import { FcGoogle } from "react-icons/fc";
 import InnerShadow from "../ui/InnerShadow";
 
