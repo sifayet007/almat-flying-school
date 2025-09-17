@@ -7,19 +7,28 @@ import { FcGoogle } from "react-icons/fc";
 import InnerShadow from "../ui/InnerShadow";
 import { testimonials } from "@/constants/studentData.constant";
 import StudentCard from "../cards/StudentCard";
+import { useEffect, useRef } from "react";
 
 
 
 export default function StudentTestimonial() {
-    function getClassName(index: number, current: number, length: number) {
-        const offset = (index - current + length) % length;
-        if (offset === 0) return "center";
-        if (offset === 1) return "right-1";
-        if (offset === 2) return "right-2";
-        if (offset === length - 1) return "left-1";
-        if (offset === length - 2) return "left-2";
-        return "hidden";
-    }
+    const scrollRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (scrollRef.current) {
+                scrollRef.current.scrollTop += 1;
+                if (
+                    scrollRef.current.scrollTop >=
+                    scrollRef.current.scrollHeight - scrollRef.current.clientHeight
+                ) {
+                    scrollRef.current.scrollTop = 0;
+                }
+            }
+        }, 10);
+
+        return () => clearInterval(interval);
+    }, []);
     return (
         <section className="main-container py-16">
             <div className="flex flex-col lg:flex-row relative overflow-hidden justify-between md:gap-[30px] gap-5 lg:items-center bg-white rounded-2xl lg:px-[60px] p-5 lg:p-0">
@@ -60,7 +69,7 @@ export default function StudentTestimonial() {
 
                 {/* Center Dial */}
                 <div className=""> 
-                    <div className="lg:rotate-0 rotate-90 w-[150px] lg:flex hidden h-[430px] md:px-0 px-5">
+                    <div className="lg:rotate-0 rotate-90 lg:flex hidden ">
                     <Image
                         src={assets_student.plan}
                         alt="plane illustration"
@@ -72,9 +81,12 @@ export default function StudentTestimonial() {
                 </div>
 
                 {/* Right Side */}
-                <div className="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-5">
+                <div className="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-5 h-auto "
+                    ref={scrollRef}
+
+                    style={{ scrollBehavior: "smooth" }}>
                     {testimonials.map((student, index) => (
-                        <div key={index} className={`${index === 0 && '-rotate-[10deg] -translate-x-14'} ${index === 1 && '-rotate-[10deg] -translate-x-5'} ${index === 2 && 'my-8'} ${index === 3 && 'rotate-[10deg] -translate-x-5'} ${index === 4 && 'rotate-[10deg] -translate-x-14'}`} style={{
+                        <div key={index} className={`${index === 0 && 'lg:-rotate-[10deg] lg:-translate-x-14'} ${index === 1 && 'lg:-rotate-[10deg] lg:-translate-x-5'} ${index === 2 && 'lg:my-8'} ${index === 3 && 'lg:rotate-[10deg] lg:-translate-x-5'} ${index === 4 && 'lg:rotate-[10deg] lg:-translate-x-14'}`} style={{
                             filter: "drop-shadow(0px 8px 9px #0998FF26)",
                         }}>
                             <StudentCard student={student} />

@@ -13,7 +13,7 @@ interface IStudent {
 const StudentCard = ({ student }: { student: IStudent }) => {
     return (
         <div
-            className="lg:max-w-[390px] flex items-center gap-2.5 bg-white shadow-md rounded-xl md:p-5 p-3 border border-transparent hover:border-blue-400 hover:shadow-blue-200 transition"
+            className="lg:max-w-[390px] flex items-center gap-2.5 bg-white shadow-md rounded-xl p-[10px] border border-transparent hover:border-blue-400 hover:shadow-blue-200 transition"
         >
             <div className="w-[110px] h-[110px] relative">
                 <Image

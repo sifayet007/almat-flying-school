@@ -7,6 +7,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Button from '../buttoms/Button';
+import { motion } from 'framer-motion';
+
 
 const MegaMenu = ({ className }: { className: string }) => {
     const [hoveredIndexFreeInfo, setHoveredIndexFreeInfo] = useState(0);
@@ -84,7 +86,8 @@ const MegaMenu = ({ className }: { className: string }) => {
                 </div>
 
             </div>
-            <div className='group'>
+            <motion.div className='group'
+            >
                 <h1 className='flex gap-x-3 cursor-pointer group-hover:text-brand-primary'>
                     <span className='line-clamp-1'>
                         Trial Lessons & Experiences
@@ -139,7 +142,7 @@ const MegaMenu = ({ className }: { className: string }) => {
                     </div>
                 </div>
 
-            </div>
+            </motion.div>
             <div className='group'>
 
                 <h1 className='flex gap-x-3 cursor-pointer group-hover:text-brand-primary'>
