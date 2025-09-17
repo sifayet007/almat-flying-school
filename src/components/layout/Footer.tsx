@@ -72,7 +72,7 @@ const Footer = () => {
 
 
                                     <span
-                                        className="relative w-[32px] h-[32px] border-2 border-white flex justify-center items-center rounded-full overflow-hidden"
+                                        className="relative w-[32px] h-[32px] border-1 border-white flex justify-center items-center rounded-full overflow-hidden"
                                     >
 
                                         <span

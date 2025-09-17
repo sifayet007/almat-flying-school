@@ -1,8 +1,8 @@
 import { IconArrowRight, IconPlaneArrival, IconStarFilled } from '@tabler/icons-react';
 import React from 'react';
-import Button from '../buttoms/Button';
 import Image from 'next/image';
 import assets from '@/assets';
+import SlideButton from '../buttoms/SlideButton';
 const review = [
     { image: assets.reviewImg1 },
     { image: assets.reviewImg2 },
@@ -40,11 +40,11 @@ const Hero = () => {
                         commercial-level professionalism <span className='font-bold'>Read more</span>
                     </p>
 
-                    <Button
-                        className='py-[clamp(8px,2.5vw,10px)] px-[clamp(12px,2.5vw,16px)] md:text-base text-sm bg-brand-primary rounded-full border-2 border-white text-white mt-[15px]'
+                    <SlideButton
+                        className='bg-brand-primary text-white'
                         buttonText='Contact Us'
+                        shadowColor='rgba(255,99,132,0.7)'
                         icon={<IconArrowRight className='size-[clamp(16px,2.5vw,20px)]' />}
-                        iconPosition='right'
                     />
                 </div>
                 <div className='flex justify-between items-center'>

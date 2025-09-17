@@ -5,10 +5,21 @@ import { IconStar, IconEye, IconPencil, IconPointFilled } from "@tabler/icons-re
 import { assets_student } from "@/assets/students";
 import { FcGoogle } from "react-icons/fc";
 import InnerShadow from "../ui/InnerShadow";
+import { testimonials } from "@/constants/studentData.constant";
+import StudentCard from "../cards/StudentCard";
 
-const testimonials = [{ name: "Arlene McCoy", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student1, }, { name: "Jane Cooper", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student2, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student3, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student4, }, { name: "Darrell Steward", rating: 5.0, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor pariatur incididunt ut labore et dolore magna aliqua.", image: assets_student.student5, },];
+
 
 export default function StudentTestimonial() {
+    function getClassName(index: number, current: number, length: number) {
+        const offset = (index - current + length) % length;
+        if (offset === 0) return "center";
+        if (offset === 1) return "right-1";
+        if (offset === 2) return "right-2";
+        if (offset === length - 1) return "left-1";
+        if (offset === length - 2) return "left-2";
+        return "hidden";
+    }
     return (
         <section className="main-container py-16">
             <div className="flex flex-col lg:flex-row relative overflow-hidden justify-between md:gap-[30px] gap-5 lg:items-center bg-white rounded-2xl lg:px-[60px] p-5 lg:p-0">
@@ -63,29 +74,10 @@ export default function StudentTestimonial() {
                 {/* Right Side */}
                 <div className="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-5">
                     {testimonials.map((student, index) => (
-                        <div
-                            key={index}
-                            className="lg:max-w-[390px] flex items-center gap-2.5 bg-white shadow-md rounded-xl md:p-5 p-3 border border-transparent hover:border-blue-400 hover:shadow-blue-200 transition"
-                        >
-                            <div className="w-[110px] h-[110px] relative">
-                                <Image
-                                    src={student.image}
-                                    alt={student.name}
-                                    fill
-                                    className="object-cover rounded-[20px]"
-                                />
-                            </div>
-                            <div className="max-w-[240px]">
-                                <div className="flex justify-between items-center">
-                                    <h3 className="font-semibold text-[18px]">{student.name}</h3>
-                                    <div className="flex items-center gap-1 text-sm text-gray-500">
-                                        <IconStar className="text-red-500 mr-1" size={16} />
-                                        {student.rating}
-                                        <FcGoogle size={16} />
-                                    </div>
-                                </div>
-                                <p className="text-gray-600 text-[12px] mt-2">{student.review}</p>
-                            </div>
+                        <div key={index} className={`${index === 0 && '-rotate-[10deg] -translate-x-14'} ${index === 1 && '-rotate-[10deg] -translate-x-5'} ${index === 2 && 'my-8'} ${index === 3 && 'rotate-[10deg] -translate-x-5'} ${index === 4 && 'rotate-[10deg] -translate-x-14'}`} style={{
+                            filter: "drop-shadow(0px 8px 9px #0998FF26)",
+                        }}>
+                            <StudentCard student={student} />
                         </div>
                     ))}
                 </div>

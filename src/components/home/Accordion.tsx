@@ -49,8 +49,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
     onClick,
 }) => {
     return (
-        <div className={`border mt-5 rounded-2xl border-zinc-200 transition-transform duration-300 ${isOpen ? " bg-black/10" : ""
-            }`}>
+        <div className={`border mt-5 rounded-2xl border-zinc-200 transition-transform duration-500 `}>
             {/* Header part of the accordion item (Question and Icon) */}
             <button
                 className="w-full flex justify-between items-center text-left py-4 px-5 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 dark:focus-visible:ring-blue-400 focus-visible:ring-opacity-75 transition-colors duration-200"
@@ -61,16 +60,16 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                     {item.question}
                 </span>
 
-                <IconChevronDown className={` ${isOpen ? "rotate-180" : ""} transition-transform duration-300`} />
+                <IconChevronDown className={` ${isOpen ? "rotate-180" : ""} transition-transform duration-500`} />
 
             </button>
 
             <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "md:max-h-14 lg:max-h-12 max-h-23 " : "max-h-0"
                     }`}
             >
                 <div className="p-5 pt-0 text-zinc-600">
-                    <p className="text-[clamp(14px,2.5vw,16px)]">{item.answer}</p>
+                    <p className="text-[clamp(14px,2vw,16px)]">{item.answer}</p>
                 </div>
             </div>
         </div>
@@ -90,8 +89,8 @@ const AccordionLast: React.FC = () => {
                 <div className="p-6 md:space-y-4">
 
                     <div className="space-y-5 flex flex-col justify-center items-center">
-                        <InnerShadow icon={<IconPointFilled className='text-blue-600' />} text='FAQ' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
+                        <InnerShadow icon={<IconPointFilled className='text-blue-600 group-hover:text-[rgba(255,99,132,0.7)] duration-300 transition-all ease-in-out' />} text='FAQ' className="!md:py-[11px] !py-[8px] group" shadowColor='#5EA4FFB2' hoverShadowColor='rgba(255,99,132,0.7)' />
                     <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-center text-zinc-900 mb-1">
                         Frequently Asked Questions
                     </h1>

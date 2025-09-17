@@ -50,8 +50,8 @@ const DedicatedFlight = () => {
             {/* Top Section */}
             <div className="flex justify-between md:items-center flex-col md:flex-row gap-6">
                 <div className="space-y-5">
-                    <InnerShadow icon={<IconPointFilled className='text-blue-600' />} text='Our Team' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
+                    <InnerShadow icon={<IconPointFilled className='text-blue-600 group-hover:text-[rgba(255,99,132,0.7)] duration-300 transition-all ease-in-out' />} text='Our Team' className="!md:py-[11px] !py-[8px] group" shadowColor='#5EA4FFB2' hoverShadowColor='rgba(255,99,132,0.7)' />
                     <h1 className="text-[clamp(24px,4vw,50px)] font-bold text-zinc-900 mb-1 ">
                         Frequently Asked Questions <br />
                         Our Dedicated Flight <br /> Instructors
@@ -90,6 +90,8 @@ const DedicatedFlight = () => {
 
             {/* Slider Section */}
             <div className="relative w-full mt-[clamp(24px,4vw,60px)] overflow-hidden">
+                <div className="absolute lg:block hidden w-[200px] h-[300px] bg-white blur-3xl left-0 -translate-x-1/2  z-10"></div>
+                <div className="absolute lg:block hidden w-[200px] h-[300px] bg-white blur-3xl right-0 translate-x-1/2 z-10"></div>
                 <div
                     className="flex  gap-x-5 transition-transform duration-500"
                     style={{

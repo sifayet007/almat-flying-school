@@ -58,14 +58,15 @@ const FlightTraining = () => {
         if (isDesktop) startAnimation();
     },);
 
+
     return (
         <div className="main-container mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5 overflow-hidden">
 
             {/* Left Side */}
             <div className="w-full">
                 <div className="md:max-w-[453px] space-y-5">
-                    <InnerShadow icon={<IconPointFilled className='text-blue-600' />} text='Our Aircraft' className="!md:py-[11px] !py-[8px]" shadowColor='#5EA4FFB2' />
 
+                    <InnerShadow icon={<IconPointFilled className='text-blue-600 group-hover:text-[rgba(255,99,132,0.7)] duration-300 transition-all ease-in-out' />} text='Our Aircraft' className="!md:py-[11px] !py-[8px] group" shadowColor='#5EA4FFB2' hoverShadowColor='rgba(255,99,132,0.7)' />
                     <h1 className="text-[clamp(24px,4vw,40px)] font-bold text-zinc-900 mb-1">
 
                         Perfectly <br /> <span className="text-brand-primary">Maintained</span> for <br />

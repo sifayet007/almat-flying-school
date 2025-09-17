@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
-import { IconArrowUpRight } from "@tabler/icons-react";
+import { IconArrowRight, IconArrowUpRight } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import Button from "../buttoms/Button";
 import assets from "@/assets";
+import SlideButton from "../buttoms/SlideButton";
 
 
 
@@ -39,18 +40,9 @@ const BookAppointment = ({ className }: { className?: string }) => {
             </div>
 
             <motion.div className="flex items-center justify-center mt-10 relative">
-                <Button
-                    buttonText="Book Now"
-                    className="z-10 py-[clamp(8px,2.5vw,12px)] rounded-full text-[clamp(12px,2.5vw,16px)] transition-all shadow-[0_0_15px_3px_rgba(255,255,255,0.5)] uppercase bg-white/20 px-[clamp(14px,2.5vw,20px)] text-white"
-                    icon={
-                        <IconArrowUpRight
-                            className="size-[clamp(18px,2.5vw,22px)]"
-                            stroke={1.5}
-                        />
-                    }
-                    iconPosition="left"
 
-                />
+
+                <SlideButton buttonText="Book Now" icon={<IconArrowRight className="size-[clamp(19px,2.5vw,23px)] " />} shadowColor="rgba(255,255,255,0.5)" className="bg-white/20 text-white" />
             </motion.div>
         </motion.div>
     );

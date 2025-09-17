@@ -8,10 +8,9 @@ import InnerShadow from '../ui/InnerShadow';
 const TrialLesson = () => {
     return (
         <div className='bg-white main-container mt-[42px] lg:px-[30px] rounded-2xl py-[50px]'>
+            <InnerShadow className='group mt-5 mb-5' icon={<IconPointFilled className='text-yellow-400 group-hover:text-[rgba(255,99,132,0.7)] transition-all duration-300 ease-in-out' />} text='Trial Lesson' hoverShadowColor='rgba(255,99,132,0.7)' shadowColor='#FFF0B5B2' />
             <div className='flex md:flex-row flex-col justify-between md:space-y-0 space-y-5'>
                 <div className='space-y-5'>
-                    <InnerShadow icon={<IconPointFilled className='text-yellow-400' />} text='Trial Lesson' shadowColor='#FFF0B5B2' />
-
                     <h1 className='text-[clamp(24px,4vw,40px)] font-bold'>Trial Flying <br className='md:block hidden' />
                         <span className='text-brand-primary '> Lessons</span>
                     </h1>
