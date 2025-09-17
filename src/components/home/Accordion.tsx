@@ -2,6 +2,8 @@
 import { IconChevronDown, IconPointFilled } from "@tabler/icons-react";
 import React, { useState } from "react";
 import InnerShadow from "../ui/InnerShadow";
+import { motion } from "framer-motion";
+
 
 // --- Types ---
 interface AccordionItem {
@@ -48,6 +50,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
     isOpen,
     onClick,
 }) => {
+
     return (
         <div className={`border mt-5 rounded-2xl border-zinc-200 transition-transform duration-300 `}>
             {/* Header part of the accordion item (Question and Icon) */}
@@ -82,9 +85,14 @@ const AccordionLast: React.FC = () => {
     const handleItemClick = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
+    const isMobile =
+        typeof window !== "undefined" && window.innerWidth < 768 ? true : false;
 
     return (
-        <div className="main-container flex items-center justify-center md:p-[60px] pb-5 bg-white mt-[clamp(24px,4vw,60px)] rounded-[20px]">
+        <motion.div initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            viewport={{ amount: isMobile ? 0.1 : 0.3 }} className="main-container flex items-center justify-center md:p-[60px] pb-5 bg-white mt-[clamp(24px,4vw,60px)] rounded-[20px]">
             <div className="w-full mx-auto bg-white rounded-[20px] overflow-hidden">
                 <div className="p-6 md:space-y-4">
 
@@ -108,7 +116,7 @@ const AccordionLast: React.FC = () => {
                     />
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

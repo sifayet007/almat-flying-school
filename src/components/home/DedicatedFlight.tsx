@@ -2,13 +2,17 @@
 import React, { useState, useEffect } from "react";
 import PilotCard from "../cards/PilotCard";
 import { pilotData } from "@/constants/pilotData.constant";
-import Button from "../buttoms/Button";
+import Button from "../buttons/Button";
+import InnerShadow from "../ui/InnerShadow";
+import { motion } from "framer-motion";
+
+
 import {
     IconArrowLeft,
     IconArrowRight,
     IconPointFilled,
 } from "@tabler/icons-react";
-import InnerShadow from "../ui/InnerShadow";
+
 
 const DedicatedFlight = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,9 +48,14 @@ const DedicatedFlight = () => {
             prevIndex <= 0 ? maxIndex : prevIndex - 1
         );
     };
+    const isMobile =
+        typeof window !== "undefined" && window.innerWidth < 768 ? true : false;
 
     return (
-        <div className="main-container mt-[clamp(24px,4vw,60px)] overflow-hidden">
+        <motion.div initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            viewport={{ amount: isMobile ? 0.1 : 0.3 }} className="main-container mt-[clamp(24px,4vw,60px)] overflow-hidden">
             {/* Top Section */}
             <div className="flex justify-between md:items-center flex-col md:flex-row gap-6">
                 <div className="space-y-5">
@@ -103,7 +112,7 @@ const DedicatedFlight = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

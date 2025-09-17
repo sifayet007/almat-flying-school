@@ -3,9 +3,9 @@
 import React from "react";
 import { IconArrowRight, IconArrowUpRight } from "@tabler/icons-react";
 import { motion } from "framer-motion";
-import Button from "../buttoms/Button";
+import Button from "../buttons/Button";
 import assets from "@/assets";
-import SlideButton from "../buttoms/SlideButton";
+import SlideButton from "../buttons/SlideButton";
 
 
 

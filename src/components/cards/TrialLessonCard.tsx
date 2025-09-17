@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import Button from '../buttoms/Button';
+import Button from '../buttons/Button';
 import { IconShoppingBag } from '@tabler/icons-react';
 import { ITrialLessonCardProps } from '@/interfaces/trialLesson.interfaces';
 

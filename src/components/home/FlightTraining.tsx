@@ -8,6 +8,7 @@ import planes from '@/constants/flightTraining.constants';
 import InnerShadow from '../ui/InnerShadow';
 import { IconPointFilled } from '@tabler/icons-react';
 
+
 const FlightTraining = () => {
     const [isDesktop, setIsDesktop] = useState(false);
 
@@ -58,9 +59,14 @@ const FlightTraining = () => {
         if (isDesktop) startAnimation();
     },);
 
-
+    const isMobile =
+        typeof window !== "undefined" && window.innerWidth < 768 ? true : false;
     return (
-        <div className="main-container mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5 overflow-hidden">
+        <motion.div
+            initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            viewport={{ amount: isMobile ? 0.1 : 0.3 }} className="main-container mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5 overflow-hidden">
 
             {/* Left Side */}
             <div className="w-full">
@@ -120,7 +126,7 @@ const FlightTraining = () => {
                     ))
                 )}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

@@ -6,7 +6,7 @@ import { IconArrowRight, IconChevronDown } from '@tabler/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Button from '../buttoms/Button';
+import Button from '../buttons/Button';
 import { motion } from 'framer-motion';
 
 

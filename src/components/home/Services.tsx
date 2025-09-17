@@ -1,13 +1,31 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useState } from 'react';
 import ServiceCard from '../cards/ServiceCard';
 import { servicesData } from '@/constants/serviceData.constant';
 import { ServiceDataType } from '@/interfaces/serviceDatatype.interface';
 import { IconPointFilled } from '@tabler/icons-react';
 import InnerShadow from '../ui/InnerShadow';
+import { motion } from 'framer-motion';
+motion
 
 const Services = () => {
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     return (
-        <div className='main-container flex flex-col justify-center items-center mt-[clamp(24px,5vw,78px)]'>
+        <motion.div
+            initial={{ opacity: 0, y: isMobile ? 10 : 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ amount: isMobile ? 0.1 : 0.2 }}
+            className='main-container flex flex-col justify-center items-center mt-[clamp(24px,5vw,78px)]'>
             <div className='text-center flex flex-col items-center space-y-4'>
                 <InnerShadow icon={<IconPointFilled className='text-blue-600 group-hover:text-[rgba(255,99,132,0.7)] duration-300 transition-all ease-in-out' />} text='Free Learn' className="!md:py-[11px] !py-[8px] group" shadowColor='#5EA4FFB2' hoverShadowColor='rgba(255,99,132,0.7)' />
 
@@ -24,7 +42,7 @@ const Services = () => {
                     ))
                 }
             </div>
-        </div>
+        </motion.div>
     );
 };
 

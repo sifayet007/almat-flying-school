@@ -1,7 +1,7 @@
 "use client"
 import assets from '@/assets';
 import React from 'react';
-import Button from '../buttoms/Button';
+import Button from '../buttons/Button';
 import { IconArrowRight, IconMail } from '@tabler/icons-react';
 import { quickLinks } from '@/constants/quickLink.constants';
 import FooterMenu from '../shared/FooterMenu';
@@ -11,11 +11,17 @@ import Image from 'next/image';
 import { socialLinks } from '@/constants/socialLinks.constant';
 import Link from 'next/link';
 import { ISocialLink } from '@/interfaces/socialLinktype.interface';
+import { motion } from 'framer-motion';
+motion
 
 const Footer = () => {
-
+    const isMobile =
+        typeof window !== "undefined" && window.innerWidth < 768 ? true : false;
     return (
-        <section className='' style={{
+        <motion.section initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            viewport={{ amount: isMobile ? 0.1 : 0.3 }} className='' style={{
             backgroundImage: `url(${assets.footerBg.src})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -90,7 +96,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }
 

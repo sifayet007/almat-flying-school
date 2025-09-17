@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../buttoms/Button';
+import Button from '../buttons/Button';
 import { IconChevronDown } from '@tabler/icons-react';
 import Image, { StaticImageData } from 'next/image';
 interface IPlan {
