@@ -36,7 +36,7 @@ export default function StudentTestimonial() {
         <motion.section initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            viewport={{ amount: isMobile ? 0.1 : 0.3 }} className="main-container py-16">
+            viewport={{ amount: isMobile ? 0.3 : 0.3 }} className="main-container py-16">
             <div className="flex flex-col lg:flex-row relative overflow-hidden justify-between md:gap-[30px] gap-5 lg:items-center bg-white rounded-2xl lg:px-[60px] p-5 lg:p-0">
                 {/* blur effects */}
                 <div className="absolute lg:block hidden w-[506px] h-[242px] bg-white blur-3xl top-0 -translate-y-1/2 right-0 z-10"></div>

@@ -65,8 +65,8 @@ const FlightTraining = () => {
         <motion.div
             initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            viewport={{ amount: isMobile ? 0.1 : 0.3 }} className="main-container mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5 overflow-hidden">
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ amount: isMobile ? 0.5 : 0.4 }} className="main-container mt-[clamp(24px,5vw,76px)] flex lg:flex-row flex-col justify-between relative items-center bg-white lg:px-[50px] rounded-[20px] lg:py-0 py-5 overflow-hidden">
 
             {/* Left Side */}
             <div className="w-full">

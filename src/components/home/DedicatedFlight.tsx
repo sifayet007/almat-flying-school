@@ -55,7 +55,7 @@ const DedicatedFlight = () => {
         <motion.div initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            viewport={{ amount: isMobile ? 0.1 : 0.3 }} className="main-container mt-[clamp(24px,4vw,60px)] overflow-hidden">
+            viewport={{ amount: isMobile ? 0.3 : 0.3 }} className="main-container mt-[clamp(24px,4vw,60px)] overflow-hidden">
             {/* Top Section */}
             <div className="flex justify-between md:items-center flex-col md:flex-row gap-6">
                 <div className="space-y-5">

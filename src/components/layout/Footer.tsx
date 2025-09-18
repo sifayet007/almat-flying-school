@@ -21,7 +21,7 @@ const Footer = () => {
         <motion.section initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            viewport={{ amount: isMobile ? 0.1 : 0.3 }} className='' style={{
+            viewport={{ amount: isMobile ? 0.3 : 0.3 }} className='' style={{
             backgroundImage: `url(${assets.footerBg.src})`,
             backgroundSize: "cover",
             backgroundPosition: "center",

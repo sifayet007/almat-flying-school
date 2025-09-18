@@ -24,7 +24,7 @@ const TrialLesson = () => {
         <motion.div initial={{ opacity: 0, y: isMobile ? 10 : 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            viewport={{ amount: isMobile ? 0.1 : 0.2 }} className='bg-white main-container mt-[42px] lg:px-[30px] rounded-2xl py-[50px]'>
+            viewport={{ amount: isMobile ? 0.1 : 0.4 }} className='bg-white main-container mt-[42px] lg:px-[30px] rounded-2xl py-[50px]'>
             <InnerShadow className='group mt-5 mb-5' icon={<IconPointFilled className='text-yellow-400 group-hover:text-[rgba(255,99,132,0.7)] transition-all duration-300 ease-in-out' />} text='Trial Lesson' hoverShadowColor='rgba(255,99,132,0.7)' shadowColor='#FFF0B5B2' />
             <div className='flex md:flex-row flex-col justify-between md:space-y-0 space-y-5'>
                 <div className='space-y-5'>
